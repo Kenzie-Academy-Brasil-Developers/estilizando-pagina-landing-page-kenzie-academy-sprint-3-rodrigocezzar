@@ -135,6 +135,32 @@ div.large-container{
     color: #fff;
     padding: 10px;
 }
+.secaoDestaque input{
+    
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.secaoDestaque input[type="email"]{
+    background-color: #fff;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+.secaoDestaque button{
+    border-radius: 0 5px 5px 0;
+    height: 30px;
+    width: 75px;
+    border: none;
+    background-color: #007aff;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    left: -5px;
+}
 .flex  {
     display: flex;
     flex-direction: column;
