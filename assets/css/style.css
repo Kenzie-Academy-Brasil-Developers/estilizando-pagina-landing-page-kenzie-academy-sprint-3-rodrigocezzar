@@ -38,23 +38,37 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     box-sizing: border-box;
     font-family: sans-serif;
     list-style: none;
+    
+}
+figcaption{
+    display: none;
 }
 img{
     max-width: 100%
 }
 div.flex{
     display: flex;
+    flex-direction: column;    
+}
+.img-menu{
+    width: 30px;
+    position: relative;
+    left: 85%;
+    bottom: 85px;
 }
 div.full-container{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    max-width: 1850px;
+    margin:0 auto;
 }
 div.large-container{
-    display: flex;
-    justify-content: space-around ;
-    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    margin:0 auto;
+    
+}
+.large-container img{
+    padding: 10px;
 }
 div.container{
     width: 100%;
@@ -73,10 +87,11 @@ body{}
   
 /* HEADER */
 header{
+    background-image: url(../img/background-destaque.webp);
+    background-size: cover;
+    height: 400px;
 }
-.topo {
-    background-color: #00043e;
-}
+
 .logo-fig    {
     display: block;
     width: 20%;
@@ -84,36 +99,46 @@ header{
     height: 100px;
 
 }
-.topo .large-container nav ul li {
-    text-align: center;
-    margin: 0 auto;
-    letter-spacing: 2px;
-    padding: 0 10px;
-    display: inline-block;
+header img{
+    width: 60px;
+}
+header nav{
+    display: none;
+}
+
+div.large-container{
+    width: 100%;
+    max-width: 1170px;
+    margin:0 auto;
+    
 }
 .cap {
 	color: transparent;
 }
 /* HEADER */
 .secaoDestaque {
-    background-image: url(/img/background-destaque.webp);
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px;
+    justify-content: center;
+    width: 100%;
 }
 .secaoDestaque h2 {
-    max-width: 500px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: #ffff;
+    font-size: 1.7rem;
+    font-family: 'lato';
+    font-weight: 500;
+    text-align: center;
+}
+.secaoDestaque p{
+    color: #fff;
+    padding: 10px;
 }
 .flex  {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+   
 }
 
 .flex-col-01 {
@@ -161,6 +186,6 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (max-width: 400px) {}
 
-    }
+    
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */
