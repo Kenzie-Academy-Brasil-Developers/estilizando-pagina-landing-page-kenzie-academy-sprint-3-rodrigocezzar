@@ -251,6 +251,7 @@ div.large-container{
 .secaoCursos{
     width: 100%;
     margin-top: 90px;
+    margin-bottom: 50px;
 }
 .secaoCursos h2{
     font-size: 24px;
@@ -284,25 +285,27 @@ div.large-container{
     color: var(--theme-color-gray);
     font-family: var(--font-family-all);
     font-size: 24px;
-    margin-bottom: 40px;
 }
 .secaoCalendar p{
     font-size: 19px;
-    width: 70%;
+    width: 100%;
     margin: 40px auto;
 }
 .calendario{
     display: flex;
+    width: 80%;
+    height: 650px;
     flex-direction: column;
 }
 .calendario-data{
+    width: 100%;
+    height: 20%;
     font-size: 45px;
-    margin-top: 40px;
     background-image: url(../img/background-destaque.webp);
-    width: 200px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: var(--theme-color-clean);
-    padding: 30px;
 }
 .calendario li{
     border: 3px solid darkblue;
@@ -322,14 +325,14 @@ div.large-container{
     font-size: 39px;
 }
 .calendario-data-rodape button{
-    width: 170px;
+    width: 50%;
     padding: 15px;
     border-radius: 5px;
     background-color: var(--theme-color-light);
     color: #ffffff;
     font-size: 19px;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .secaoContato-informacoes{
     display: flex;
