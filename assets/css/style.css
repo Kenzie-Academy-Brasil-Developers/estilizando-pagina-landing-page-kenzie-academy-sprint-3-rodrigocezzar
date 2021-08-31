@@ -29,7 +29,12 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+
+
+
+
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -296,6 +301,9 @@ div.large-container{
     color: #ffffff;
     padding: 30px;
 }
+.calendario li{
+    border: 3px solid darkblue;
+}
 .calendario h3{
     margin-top: 30px;
     font-size: 25px;
@@ -369,5 +377,111 @@ main{}
     @media screen and (max-width: 400px) {}
 
     
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        main{
+            margin-top: 50px;
+        }
+        header nav{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 90px;
+            position: relative;
+            bottom: 70px;
+        }
+        header nav li{
+            display: inline-block;
+            padding: 10px;
+            font-size: 21px;
+        }
+        .img-menu{
+            display: none;
+        }
+     
+        .flex-col{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 90px;
+            
+        }
+
+        .secaoSobre article{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .secaoSobre h2{}
+        .secaoSobre p{
+            padding: 10px;
+            font-size: 1rem;
+            text-align: left;
+            margin: 0px;
+            max-width: 400px;
+        }
+        .secaoSobre span{
+            color: #818181;
+            padding: 15px 0px 15px 15px;         
+            margin: 0;
+            width: 400px;
+            font-size: 19px;
+        }
+        
+        .flex-col img{
+            width: 460px;
+        }
+        #col-dir{
+           height: 100px;
+        }
+        #flex-js{
+            height: 100px;
+        }
+        .flex-col .js{
+            width: 170px;
+        }
+        .secaoSobre button{
+            font-size: 15px;
+            width: 110px;
+            padding: 1px;
+            border-color: #b9b8b8;
+            margin: 10px 0px 10px 0px;
+           
+        }
+        .secaoCursos{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .secaoCursos h2{
+            font-size: 25px;
+            text-align: center;
+            font-family: 'Montserrat';
+        }
+        .secaoCursos ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .secaoCalendar {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .secaoCalendar ul{
+            display: flex;
+            flex-direction: row;
+        }
+        div.flex{
+            flex-direction: row;
+        }
+        .form-input-model {
+            padding: 5px;
+             display: flex;
+            justify-content: center;
+        }
+    }   
+    
 /* MEDIA QUERIES */
