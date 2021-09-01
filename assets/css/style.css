@@ -105,32 +105,35 @@ header{
     width: 20%;
     max-width: 100px;
     height: 100px;
-
 }
 header img{
     width: 60px;
 }
 header nav{
     display: none;
+    font-size: 13px;    
 }
-
+header nav ul li a {
+    text-decoration: none;
+}
 div.large-container{
     width: 100%;
+    height: 100px;
     max-width: 1170px;
     margin:0 auto;
-    
+    background-color: #00043e;
 }
 .cap {
 	color: transparent;
 }
 /* HEADER */
 .secaoDestaque {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    font-size: 63px;
 }
 .secaoDestaque h2 {
     color: var(--theme-color-clean);
@@ -142,6 +145,7 @@ div.large-container{
 .secaoDestaque p{
     color: var(--theme-color-clean);
     padding: 10px;
+    font-size: 21px;
 }
 .secaoDestaque input{
     
@@ -159,6 +163,7 @@ div.large-container{
     border-radius: 5px 0 0 5px;
 }
 .secaoDestaque button{
+    font-size: 14px;
     border-radius: 0 5px 5px 0;
     height: 30px;
     width: 75px;
@@ -186,7 +191,7 @@ div.large-container{
 }
 .secaoSobre h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 60px;
     font-family: var(--font-family-title); 
     color: var(--theme-color-gray);
@@ -195,7 +200,7 @@ div.large-container{
     font-family: var(--font-family-all);
     font-size: 19px;
     color: var(--theme-color-gray);
-    padding: 15px;
+    padding: 19px;
     max-width: 210px;
     text-align: left;
     margin: 40px auto;
@@ -254,12 +259,12 @@ div.large-container{
     margin-bottom: 50px;
 }
 .secaoCursos h2{
-    font-size: 24px;
+    font-size: 19px;
     text-align: center;
     font-family: var(--font-family-title);
 }
 .secaoCursos p{
-    font-size: 19px;
+    font-size: 15px;
     text-align: center;
     margin-top: 20px;
     color: var(--theme-color-lightGray);
@@ -287,20 +292,19 @@ div.large-container{
     font-size: 24px;
 }
 .secaoCalendar p{
-    font-size: 19px;
+    font-size: 15px;
     width: 100%;
     margin: 40px auto;
 }
 .calendario{
     display: flex;
     width: 80%;
-    height: 650px;
     flex-direction: column;
 }
 .calendario-data{
     width: 100%;
     height: 20%;
-    font-size: 45px;
+    font-size: 36px;
     background-image: url(../img/background-destaque.webp);
     display: flex;
     flex-direction: column;
@@ -308,11 +312,13 @@ div.large-container{
     color: var(--theme-color-clean);
 }
 .calendario li{
-    border: 3px solid darkblue;
+    border: 1px solid darkblue;
+    margin-right: 5px;
+    height: 500px;
 }
 .calendario h3{
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 19px;
     color: var(--theme-color-gray);
 }
 
@@ -322,7 +328,7 @@ div.large-container{
 }
 .calendario-data-rodape span{
     color: var(--theme-color-lightGray);;
-    font-size: 39px;
+    font-size: 36px;
 }
 .calendario-data-rodape button{
     width: 50%;
@@ -330,7 +336,7 @@ div.large-container{
     border-radius: 5px;
     background-color: var(--theme-color-light);
     color: #ffffff;
-    font-size: 19px;
+    font-size: 15px;
     margin: auto;
     margin-top: 15px;
 }
@@ -357,8 +363,17 @@ div.large-container{
 .secaoContato-informacoes ul li a{
     color: var(--theme-color-lightGray);
 }
+.secaoContato-informacoes h2 {
+    margin-left: 300px;
+}
 /* FOOTER */
-footer{}
+.form-input-model label {
+    color: transparent;    
+}
+.form-input-model input {
+    margin-left: 120px;
+    width: 100px;
+}
 /* FOOTER */
 
 /* INICIAL */
@@ -462,22 +477,25 @@ main{}
         .secaoSobre button{
             font-size: 15px;
             width: 110px;
-            padding: 1px;
+            padding: 10px;
             border-color: #b9b8b8;
             margin: 10px 0px 10px 0px;
-           
+           margin-right: 250px;
         }
         .secaoCursos{
             display: flex;
             flex-wrap: wrap;
         }
         .secaoCursos h2{
-            font-size: 25px;
+            font-size: 19px;
             text-align: center;
             font-family: var(--font-family-title);
         }
         .secaoCursos p{
-            font-size: 22px;
+            font-size: 15px;
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 30px;
         }
         .secaoCursos ul{
             display: flex;
@@ -502,6 +520,22 @@ main{}
             padding: 5px;
              display: flex;
             justify-content: center;
+        }
+        .flex-col-footer-01 {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            height: 230px;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        .flex-col-footer-02 {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            height: 230px;
+            margin-top: 100px;
+            margin-left: 50px;
         }
     }   
     
